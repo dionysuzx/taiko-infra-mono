@@ -4,12 +4,12 @@ global:
   # options: [driver, proposer, prover]
   mode: driver
   endpoints:
-    l1Http: "http://{{ .Release.Name }}-execution:8545"
-    l1Ws: "ws://{{ .Release.Name }}-execution:8545"
-    l1Beacon: "http://{{ .Release.Name }}-beacon:5052"
-    l2Http: "http://{{ .Release.Name }}-taiko-geth:8545"
-    l2Ws: "ws://{{ .Release.Name }}-taiko-geth:8546"
-    l2Auth: "http://{{ .Release.Name }}-taiko-geth:8551"
+    l1Http: "http://ethereum-node-holesky-execution:8545"
+    l1Ws: "ws://ethereum-node-holesky-execution:8545"
+    l1Beacon: "http://ethereum-node-holesky-beacon:5052"
+    l2Http: "http://-taiko-geth:8545"
+    l2Ws: "ws://taiko-geth:8546"
+    l2Auth: "http://taiko-geth:8551"
   # WARN: do not commit these values, using external secrets is recommended
   secret:
     jwt: ecb22bc24e7d4061f7ed690ccd5846d7d73f5d2b9733267e12f56790398d908a
