@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/taikoxyz/taiko-helm-charts
-    targetRevision: taiko-changes
+    targetRevision: argo-test
     path: charts/taiko-node
     helm:
       valueFiles:
@@ -20,4 +20,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-
