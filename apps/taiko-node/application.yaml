@@ -1,0 +1,23 @@
+# apps/my-app/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-taiko-node
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/taikoxyz/taiko-helm-charts/tree/taiko-changes
+    targetRevision: HEAD
+    path: charts/taiko-node
+    helm:
+      valueFiles:
+      - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
