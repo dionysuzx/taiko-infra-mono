@@ -7,8 +7,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/taikoxyz/taiko-helm-charts/tree/taiko-changes
-    targetRevision: HEAD
+    repoURL: https://github.com/taikoxyz/taiko-helm-charts
+    targetRevision: taiko-changes
     path: charts/taiko-node
     helm:
       valueFiles:
