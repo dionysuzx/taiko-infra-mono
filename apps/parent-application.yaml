@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: parent-application
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/d1onys1us/taiko-infra-mono
+    targetRevision: main
+    path: apps  # Pointing to the directory containing child apps
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  # List child applications as resources
+  resources:
+    - name: taiko-geth
+      kind: Application
+      group: argoproj.io
+      namespace: argocd
+    - name: taiko-client-driver
+      kind: Application
+      group: argoproj.io
+      namespace: argocd
+

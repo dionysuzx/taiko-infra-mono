@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-taiko-geth
+  name: taiko-geth
   namespace: argocd
 spec:
   project: default

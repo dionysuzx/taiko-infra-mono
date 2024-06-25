@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-taiko-client-driver
+  name: taiko-client-driver
   namespace: argocd
 spec:
   project: default
