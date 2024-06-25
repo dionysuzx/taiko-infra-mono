@@ -16,10 +16,10 @@ global:
   resources:
     requests:
       cpu: 1000m
-      memory: 500Mi
+      memory: 400Mi
     limits:
       cpu: 1000m
-      memory: 500Mi
+      memory: 400Mi
   replicaCount: 1
 
 clientArgs:
