@@ -34,7 +34,7 @@ spec:
             limits:
               cpu: 1000m
               memory: 400Mi
-          replicaCount: 2
+          replicaCount: 0
 
         clientArgs:
           common:
