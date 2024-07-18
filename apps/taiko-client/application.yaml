@@ -18,9 +18,9 @@ spec:
           # options: [driver, proposer, prover, guardian]
           mode: driver
           l1Endpoints:
-            l1Http: "http://ethereum-node-execution:8545"
-            l1Ws: "ws://ethereum-node-execution:8546"
-            l1Beacon: "http://ethereum-node-beacon:5052"
+            l1Http: "http://ethereum-node-holesky-execution:8545"
+            l1Ws: "ws://ethereum-node-execution:8545"
+            l1Beacon: "http://ethereum-node-holesky-beacon:5052"
           l2Endpoints:
             l2Http: "http://taiko-geth-argocd:8545"
             l2Ws: "ws://taiko-geth-argocd:8546"
