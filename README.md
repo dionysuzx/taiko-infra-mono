@@ -15,16 +15,16 @@ taiko-infra-mono/
 │   ├── base-overlay/
 │   │   ├── kustomization.yaml
 │   │   └── common-overlay.yaml
-│   ├── staging/
+│   ├── hekla/
 │   │   ├── kustomization.yaml
 │   │   ├── taiko-client-overlay.yaml
 │   │   └── taiko-geth-overlay.yaml
-│   └── prod/
+│   └── mainnet/
 │       ├── kustomization.yaml
 │       ├── taiko-client-overlay.yaml
 │       └── taiko-geth-overlay.yaml
-├── root-application-staging.yaml
-└── root-application-prod.yaml
+├── root-application-hekla.yaml
+└── root-application-mainnet.yaml
 ```
 
 So for example you can:
