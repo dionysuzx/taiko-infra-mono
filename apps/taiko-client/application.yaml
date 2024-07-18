@@ -7,8 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/taikoxyz/taiko-helm-charts
-    targetRevision: taiko-changes
+    repoURL: https://github.com/libreth/taiko-helm-charts
     path: charts/taiko-client
     helm:
       valuesObject:
