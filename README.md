@@ -9,15 +9,20 @@ You can also use Kustomize to manage multiple environments like:
 ```
 taiko-infra-mono/
 ├── apps/
-│   ├── taiko-client.yaml
-│   └── taiko-geth.yaml
+│   ├── taiko-client-application.yaml
+│   └── taiko-geth-application.yaml
 ├── overlays/
+│   ├── base-overlay/
+│   │   ├── kustomization.yaml
+│   │   └── common-overlay.yaml
 │   ├── staging/
 │   │   ├── kustomization.yaml
-│   │   └── taiko-client-patch.yaml
+│   │   ├── taiko-client-overlay.yaml
+│   │   └── taiko-geth-overlay.yaml
 │   └── prod/
 │       ├── kustomization.yaml
-│       └── taiko-client-patch.yaml
+│       ├── taiko-client-overlay.yaml
+│       └── taiko-geth-overlay.yaml
 ├── root-application-staging.yaml
 └── root-application-prod.yaml
 ```
