@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: taiko-client-prod
+  name: taiko-client-argocd
   namespace: argocd
 spec:
   project: default
