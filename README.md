@@ -12,17 +12,14 @@ taiko-infra-mono/
 │   ├── taiko-client-application.yaml
 │   └── taiko-geth-application.yaml
 ├── overlays/
-│   ├── base-overlay/
-│   │   ├── kustomization.yaml
-│   │   └── common-overlay.yaml
 │   ├── hekla/
 │   │   ├── kustomization.yaml
-│   │   ├── taiko-client-overlay.yaml
-│   │   └── taiko-geth-overlay.yaml
+│   │   ├── taiko-client-patch.yaml
+│   │   └── taiko-geth-patch.yaml
 │   └── mainnet/
 │       ├── kustomization.yaml
-│       ├── taiko-client-overlay.yaml
-│       └── taiko-geth-overlay.yaml
+│       ├── taiko-client-patch.yaml
+│       └── taiko-geth-patch.yaml
 ├── root-application-hekla.yaml
 └── root-application-mainnet.yaml
 ```
