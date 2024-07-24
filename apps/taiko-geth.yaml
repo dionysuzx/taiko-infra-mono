@@ -33,7 +33,7 @@ spec:
           storage:
             className: local-path
             request: 1Ti
-          replicaCount: 1
+          replicaCount: 0
         
         hekla:
           image:
