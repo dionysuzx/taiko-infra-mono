@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/libreth/taiko-helm-charts
+    repoURL: https://github.com/taikoxyz/taiko-helm-charts
     path: charts/taiko-geth
     helm:
       valuesObject:
@@ -33,7 +33,7 @@ spec:
           storage:
             className: local-path
             request: 1Ti
-          replicaCount: 0
+          replicaCount: 1
         
         hekla:
           image:
